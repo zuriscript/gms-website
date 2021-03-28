@@ -12,7 +12,7 @@ export const MainNav = styled.nav<StyledProps>`
 `;
 
 export const MainNavItem = motion(styled(Link)`
-  ${tw`relative text-indigo-900 border-b border-transparent hover:text-indigo-900 ml-0 sm:ml-8 mt-3 sm:mt-0`};
+  ${tw`relative text-gray-50 border-b border-transparent hover:text-gray-300 ml-0 sm:ml-8 mt-3 sm:mt-0`};
   width: max-content;
 
   &.active {

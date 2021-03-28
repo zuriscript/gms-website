@@ -1,6 +1,6 @@
 <svg width="85" height="85" version="1.1" viewBox="0 0 115 90" xmlns="http://www.w3.org/2000/svg">
  <g transform="matrix(1.25,0,0,-1.25,0,90)">
-  <g fill="none" stroke="#7FE1D9">
+  <g fill="none" stroke="#D1D5DB">
    <circle transform="scale(1,-1)" cx="36.062" cy="-35.66" r="31.959" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.6"/>
    <path d="m66.548 20.358 21.206-12.243" stroke-linecap="round" stroke-width="5.6"/>
    <g stroke-width="2.4">
@@ -11,7 +11,7 @@
     <path d="m31.668 25.534-1.1882-10.896"/>
    </g>
   </g>
-  <g fill="#7FE1D9" stroke="#7FE1D9" stroke-width="3">
+  <g fill="#D1D5DB" stroke="#D1D5DB" stroke-width="3">
    <circle transform="scale(1,-1)" cx="19.698" cy="-39.219" r="2.5381"/>
    <circle transform="scale(1,-1)" cx="43.212" cy="-31.348" r="2.5381"/>
    <circle transform="scale(1,-1)" cx="31.977" cy="-27.009" r="2.5381"/>
@@ -19,7 +19,7 @@
    <circle transform="scale(1,-1)" cx="29.474" cy="-13.25" r="2.5381"/>
    <circle transform="scale(1,-1)" cx="19.698" cy="-22.11" r="2.5381"/>
   </g>
-  <g fill="none" stroke="#7FE1D9">
+  <g fill="none" stroke="#D1D5DB">
    <g stroke-width="2.4">
     <path d="m32.562 25.312 8.1266-6.4158"/>
     <path d="m21.319 23.296 8.9821 2.994"/>
