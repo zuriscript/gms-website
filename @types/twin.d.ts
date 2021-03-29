@@ -7,3 +7,9 @@ declare module 'twin.macro' {
   const styled: typeof styledImport
   const css: typeof cssImport
 }
+
+declare module "react" {
+  interface Attributes {
+      css?: any;
+  }
+}

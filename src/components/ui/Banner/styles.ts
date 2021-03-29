@@ -1,7 +1,8 @@
 import tw, { styled } from "twin.macro"
+import { StaticImage } from "gatsby-plugin-image"
 
 export const Banner = styled.section`
-  ${tw`bg-background flex flex-col justify-center`};
+  ${tw`bg-background flex flex-col justify-center items-center`};
 `;
 
 export const Title = styled.h1`
@@ -13,7 +14,15 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
   ${tw`mb-8 text-center 
+        md:mt-2
         text-gray-50
         text-xs sm:text-lg md:text-xl lg:text-2xl 
         font-semibold font-nunitosans`};
+`;
+
+export const ImageContainer = styled.div`
+  width:55%;
+  height:auto;
+  margin-right:3%;
+  padding-bottom:5%;
 `;
