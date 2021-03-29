@@ -21,21 +21,26 @@ module.exports = {
         path: `${__dirname}/src/data`
       }
     },
+    `gatsby-plugin-image`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: `gatsby-remark-prismjs`,
             options: {
-              maxWidth: 768,
-              linkImagesToOriginal: false
+              aliases:{sh: "bash", js:"javascript"},
+              showLineNumbers: false,
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: true,
+              },
             }
           }
         ]
       }
     },
-    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`, 
     `gatsby-transformer-sharp`,
     {
