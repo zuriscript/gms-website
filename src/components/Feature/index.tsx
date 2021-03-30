@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import {Display} from "helpers/definitions"
 
 import * as Styled from './styles';
 
@@ -11,6 +12,8 @@ interface Feature {
     frontmatter: {
       title: string;
       text: string;
+      display: Display;
+      order: number;
     };
   };
 }
@@ -18,15 +21,20 @@ interface Feature {
 const Features: React.FC = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "features" } } }) {
+      allMarkdownRemark(
+        sort: {order: ASC, fields: frontmatter___order}
+        filter: {frontmatter: {title: {}, category: {eq: "features"}}}
+      ) {
         edges {
           node {
+            fileAbsolutePath
             id
             html
             excerpt(pruneLength: 160)
             frontmatter {
-             title
-             text
+              title
+              text
+              display
             }
           }
         }
@@ -43,11 +51,11 @@ const Features: React.FC = () => {
               id,
               html,
               excerpt,
-              frontmatter: { title, text },
+              frontmatter: { title, text, display },
             } = item.node;
 
             return (
-              <Styled.Feature key={id}>
+              <Styled.Feature key={id} displayProp={display}>
                 <Styled.FeatureContent>
                   <Styled.FeatureTitle>{title}</Styled.FeatureTitle>
                   <Styled.FeatureText>{text}</Styled.FeatureText>

@@ -8,3 +8,10 @@ export interface SectionTitle {
   title: string;
   subtitle: string;
 }
+
+export enum Display
+{
+  LEFT = "LEFT",
+  RIGHT = "RIGHT",
+  TOP = "TOP"
+}

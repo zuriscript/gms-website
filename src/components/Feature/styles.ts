@@ -1,19 +1,34 @@
 
-import tw, { styled } from "twin.macro"
+import tw, { styled, css } from "twin.macro"
+import {Display} from "helpers/definitions"
 
 export const Features = styled.div`
   ${tw`flex flex-col pt-10`};
 `;
 
+interface DisplayProp {
+  displayProp : Display
+}
+
+const displayPos = (props: DisplayProp) =>
+(props.displayProp === Display.LEFT ) ?
+css`${tw`md:flex-row space-x-10`};` :
+(
+  (props.displayProp === Display.RIGHT ) ?
+    css`${tw`md:flex-row-reverse space-x-10 space-x-reverse`};` :
+    css`${tw`space-y-10`};`
+); 
+
 export const Feature = styled.div`
-  ${tw`
-    flex flex-col md:flex-row justify-center
+${displayPos};
+${tw`
+    flex flex-col justify-center
     items-center
     pt-5`};
 `;
 
 export const FeatureContent = styled.div`
-  ${tw`max-w-md pr-10`};
+  ${tw`max-w-md`};
 `;
 
 export const FeatureTitle = styled.h1`
@@ -30,22 +45,5 @@ export const FeatureText = styled.p`
 
 
 export const MarkdownContent = styled.div`
-  a {
-    text-decoration: none;
-    position: relative;
-    background-image: linear-gradient(
-      rgba(255, 250, 150, 0.8),
-      rgba(255, 250, 150, 0.8)
-    );
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-    &:hover {
-      background-size: 100% 88%;
-    }
-  }
-  a > code:hover {
-    text-decoration: underline;
-  }
+
 `;
