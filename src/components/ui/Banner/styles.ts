@@ -21,8 +21,5 @@ export const SubTitle = styled.h2`
 `;
 
 export const ImageContainer = styled.div`
-  width:55%;
-  height:auto;
-  margin-right:3%;
-  padding-bottom:5%;
+${tw`w-7/12 h-auto pb-20`};
 `;

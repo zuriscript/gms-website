@@ -1,9 +1,9 @@
 ---
 category: 'features'
 title: 'To Set or not to Set'
-text: 'Although GMS emphesis and strength lies on set algebra, we enable a non setbased design approach, too.Our provided representations offer multiple compression schemes and can be combined with neighbourhood permuters.'
-display: 'RIGHT'
-order: '1'
+text: 'Although GMS emphesis and strength lies on set algebra, we enable a non setbased design approach, too. Our provided representations offer multiple compression schemes and can be combined with neighbourhood permuters.'
+display: 'LEFT'
+order: '2'
 ---
 
 ```cpp

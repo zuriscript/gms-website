@@ -3,7 +3,7 @@ import tw, { styled, css } from "twin.macro"
 import {Display} from "helpers/definitions"
 
 export const Features = styled.div`
-  ${tw`flex flex-col pt-10`};
+  ${tw`flex flex-col pt-14 pb-14`};
 `;
 
 interface DisplayProp {
@@ -24,7 +24,7 @@ ${displayPos};
 ${tw`
     flex flex-col justify-center
     items-center
-    pt-5`};
+    pt-14`};
 `;
 
 export const FeatureContent = styled.div`
