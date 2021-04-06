@@ -50,13 +50,12 @@ const Features: React.FC = () => {
             const {
               id,
               html,
-              excerpt,
               frontmatter: { title, text, display },
             } = item.node;
 
             return (
               <Styled.Feature key={id} displayProp={display}>
-                <Styled.FeatureContent>
+                <Styled.FeatureContent displayProp={display}>
                   <Styled.FeatureTitle>{title}</Styled.FeatureTitle>
                   <Styled.FeatureText>{text}</Styled.FeatureText>
                 </Styled.FeatureContent>
