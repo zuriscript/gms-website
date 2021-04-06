@@ -1,18 +1,33 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from 'components/Layout';
 import SEO from 'components/SEO';
-import Container from 'components/ui/Container';
-import TitleSection from 'components/ui/TitleSection';
+
+import tw, { styled } from "twin.macro"
+import Icon from "assets/svg/logo.inline.dark.svg";
+
+
+export const Content = styled.div`
+  ${tw`h-screen flex flex-col justify-center items-center`};
+`;
+
+export const Title = styled.h1`
+  ${tw`text-3xl md:text-4xl`};
+`;
+
+export const ClickableIcon = styled(Icon)`
+  ${tw`cursor-pointer`};
+`;
+
+
 
 const NotFoundPage: React.FC = () => (
-  <Layout>
+  <Content> 
     <SEO title="404: Not found" />
-    <Container section>
-      <TitleSection title="404" subtitle="Page not found" center />
-      <p className="mt-4 text-center w-full">You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Container>
-  </Layout>
+        <Title>404: Page not found</Title>
+        <p>This Path does not exists</p>
+        <Link  to="/"><ClickableIcon/></Link>
+  </Content>
 );
 
 export default NotFoundPage;
