@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         'background': '#111827',
       },
+      maxWidth: {
+        '90': '90%',
+       }
     },
   },
   variants: {},

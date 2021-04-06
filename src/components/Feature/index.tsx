@@ -61,7 +61,6 @@ const Features: React.FC = () => {
                   <Styled.FeatureText>{text}</Styled.FeatureText>
                 </Styled.FeatureContent>
                 <Styled.MarkdownContent dangerouslySetInnerHTML={{ __html: html }} />
-                <p>{excerpt}</p>
               </Styled.Feature>
             );
           })}
