@@ -10,5 +10,5 @@ order: '5'
 - Degeneracy reordering (by up to >2x)
 - Maximal clique listing (by up to >9x)
 - k-clique listing (by 1.1x)
-- subgraph isomorphism (by up to 2.5x)
+- Subgraph isomorphism (by up to 2.5x)
 ```

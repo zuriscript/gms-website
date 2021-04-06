@@ -59,6 +59,9 @@ export const FeatureText = styled.p`
 export const MarkdownContent = styled.div`
   /* Inline code */
   .language-text {
-    ${tw`bg-yellow-100 text-red-700 font-mono`};
+    ${tw`bg-yellow-100 text-red-700 font-mono 
+    overflow-auto 
+    w-screen sm:w-auto
+    `};
   }
 `;
