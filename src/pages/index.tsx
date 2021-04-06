@@ -4,6 +4,7 @@ import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import HeroBanner from 'components/HeroBanner';
 import Features from 'components/Feature';
+import Papers from 'components/Papers';
 
 const IndexPage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage: React.FC = () => {
       <SEO title="GraphMineSuite" />
       <HeroBanner />
       <Features />
+      <Papers />
     </Layout>
   );
 };
