@@ -38,23 +38,23 @@ export const ToogleMainNav = styled.button<StyledProps>`
   outline: none !important;
 
   span {
-    ${tw`bg-indigo-500 inline-block w-6 h-px`};
+    ${tw`bg-green-500 inline-block w-6 h-px`};
     transition: 0.2s;
 
-    &:first-child {
+    &:first-of-type {
       ${({ open }) => (open ? tw`-mb-px` : tw`mb-1`)};
       transform: ${({ open }) => (open ? 'rotate(45deg)' : 'none')};
     }
 
-    &:last-child {
+    &:last-of-type {
       ${({ open }) => (open ? tw`-mt-px` : tw`mt-1`)};
       transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'none')};
     }
 
-    &:nth-child(2) {
+    &:nth-of-type(2) {
       ${tw`bg-green-400 inline-block w-8 h-px`};
 
-      ${({ open }) => (open ? tw`opacity-0` : tw`opacity-10`)};
+      ${({ open }) => (open ? tw`opacity-0` : tw`opacity-50`)};
       transform: ${({ open }) => (open ? 'translate(20px)' : 'none')};
     }
   }
