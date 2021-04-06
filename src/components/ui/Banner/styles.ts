@@ -30,7 +30,6 @@ ${tw`
   .art-directed {
     margin-top: 50px;
     min-height: 100vh;
-    opacity: 0.9;
   }
 }
 
