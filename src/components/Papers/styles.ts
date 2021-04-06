@@ -1,20 +1,31 @@
 
 import tw, { styled } from "twin.macro"
 
+export const PaperSection = styled.div`
+  ${tw`bg-gray-100
+  pt-5 md:pt-14
+  pb-5 md:pb-10  `};
+`;
 
+export const Title = styled.h1`
+  ${tw`
+  text-center 
+  text-3xl
+  text-black font-nunitosans
+  pb-5`};
+`;
 
 export const Papers = styled.div`
   ${tw`flex flex-col bg-gray-100
-  pt-5 md:pt-14 
-  pb-10 md:pb-14 
   overflow-auto
   items-center`};
 `;
 
 export const Paper = styled.div`
-${tw`
-px-3 md:px-0
-max-w-4xl`};
+  ${tw`
+  px-3 lg:px-0
+  md:w-full lg:w-7/12
+  pb-5`};
 `;
 
 export const PaperTitle = styled.h1`

@@ -1,5 +1,9 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import tw, { css } from "twin.macro"
+
+import ETHIcon from "assets/svg/eth.inline.svg";
+import SPCLIcon from "assets/svg/spcl.inline.svg";
 
 import * as Styled from './styles';
 
@@ -18,7 +22,7 @@ interface Paper {
   };
 }
 
-const Papers: React.FC = () => {
+const AboutUs: React.FC = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -45,30 +49,17 @@ const Papers: React.FC = () => {
   const features: Paper[] = allMarkdownRemark.edges;
 
   return (
-    <Styled.PaperSection>
-    <Styled.Title>Publications</Styled.Title>
-    <Styled.Papers>
-        {features.map((item) => {
-            const {
-              id,
-              frontmatter: { title, authors, postscriptum, link },
-            } = item.node;
-
-            return (
-              <Styled.Paper key={id}>
-                  <Styled.PaperTitle>{title}</Styled.PaperTitle>
-                  <Styled.PaperAuthors>{authors}</Styled.PaperAuthors>
-                  <Styled.PaperPostScriptum>
-                    {postscriptum}
-                    <Styled.PaperLink href={link}>arXiv</Styled.PaperLink>
-                  </Styled.PaperPostScriptum>
-              </Styled.Paper>
-            );
-          })}
-    </Styled.Papers>
-    </Styled.PaperSection>
+    <Styled.AboutUsBanner>
+        <Styled.Text>We are researchers and students from spcl and ETH Zurich</Styled.Text>
+        <Styled.Text>GraphMineSuite is developed and maintained as part of </Styled.Text>
+        <Styled.LogoLinkSection>
+          <ETHIcon/>
+          <SPCLIcon/>
+        </Styled.LogoLinkSection>
+        <Styled.Text></Styled.Text>
+    </Styled.AboutUsBanner>
   );
 };
 
 
-export default Papers;
+export default AboutUs;
