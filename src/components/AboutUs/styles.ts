@@ -19,6 +19,7 @@ export const LogoLinkSection = styled.div`
 
 export const Text = styled.p`
   ${tw`text-center 
+  text-sm sm:text-base
   text-white 
   font-nunitosans`};
 `;

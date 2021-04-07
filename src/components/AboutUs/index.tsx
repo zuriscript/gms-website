@@ -1,11 +1,11 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import tw, { css } from "twin.macro"
 
 import ETHIcon from "assets/svg/eth.inline.svg";
 import SPCLIcon from "assets/svg/spcl.inline.svg";
 
 import * as Styled from './styles';
+import AnimationLines from 'components/AnimationLines';
 
 interface Paper {
   node: {
@@ -50,13 +50,15 @@ const AboutUs: React.FC = () => {
 
   return (
     <Styled.AboutUsBanner>
-        <Styled.Text>We are researchers and students from spcl and ETH Zurich</Styled.Text>
-        <Styled.Text>GraphMineSuite is developed and maintained as part of </Styled.Text>
+        {/* <Styled.Text>We are researchers and students from spcl and ETH Zurich</Styled.Text>
         <Styled.LogoLinkSection>
           <ETHIcon/>
           <SPCLIcon/>
         </Styled.LogoLinkSection>
-        <Styled.Text></Styled.Text>
+        <Styled.Text>GraphMineSuite is actively developed</Styled.Text>
+        <Styled.Text>As subject of research it will likely include more features in the future.</Styled.Text>
+        <Styled.Text></Styled.Text> */}
+        <AnimationLines/>
     </Styled.AboutUsBanner>
   );
 };

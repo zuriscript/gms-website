@@ -2,7 +2,7 @@
 import tw, { styled } from "twin.macro"
 
 export const Footer = styled.footer`
-  ${tw`bg-background py-4 h-screen sm:h-auto`};
+  ${tw`bg-background py-4 h-screen sm:h-auto overflow-hidden`};
 `;
 
 
