@@ -28,6 +28,7 @@ export const Text = styled.p`
   ${tw`
   text-base
   text-white 
+  font-medium
   font-nunitosans`};
 `;
 
