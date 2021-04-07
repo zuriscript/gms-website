@@ -2,10 +2,12 @@
 import tw, { styled } from "twin.macro"
 
 export const Footer = styled.footer`
-  ${tw`bg-background py-4 h-screen sm:h-auto overflow-hidden`};
+  ${tw`bg-background py-4 min-h-screen flex flex-col justify-center overflow-hidden`};
 `;
 
-
+export const CopyrightText = styled.p`
+  ${tw`pt-10 text-gray-100 text-xs text-center font-semibold`};
+`;
 
 export const Links = styled.div`
   ${tw`flex items-center justify-center w-full`};

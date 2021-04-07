@@ -6,14 +6,16 @@ import {Display, Height, Length, LineParams, Tone} from 'helpers/definitions';
 export const Canvas = styled.div`
 ${tw`
   flex flex-col
+  items-center
   w-screen
   overflow-hidden
   pt-5`};
 `;
 
 export const Title = styled.h1`
-  ${tw`text-center 
-  text-2xl
+  ${tw`text-center
+  mx-2 
+  text-xl sm:text-2xl
   font-semibold
   text-white font-nunitosans`};
 `;
@@ -26,6 +28,14 @@ export const Text = styled.p`
   ${tw`
   text-base
   text-white 
+  font-nunitosans`};
+`;
+
+export const FatText = styled.p`
+  ${tw`
+  text-lg
+  text-white 
+  font-semibold
   font-nunitosans`};
 `;
 
@@ -60,11 +70,11 @@ export const Line = styled(motion.div)<LineParams>`
   ${props => 
     {
       switch (props.length) {
-        case Length.VERY_SHORT: return tw`w-8`;
-        case Length.SHORT: return tw`w-16`;
-        case Length.MEDIUM: return tw`w-1/4`;
-        case Length.LONG: return tw`w-1/2`;
-        case Length.VERY_LONG: return tw`w-4/5`;
+        case Length.VERY_SHORT: return tw`w-8 md:w-4`;
+        case Length.SHORT: return tw`w-16 md:w-8`;
+        case Length.MEDIUM: return tw`w-1/4 md:w-16`;
+        case Length.LONG: return tw`w-1/2 md:w-32`;
+        case Length.VERY_LONG: return tw`w-4/5 md:w-64`;
     }}
   };
   ${props => 
@@ -87,8 +97,9 @@ export const Line = styled(motion.div)<LineParams>`
     ${props => 
       {
         switch (props.display) {
-          case Display.LEFT: return tw`text-left`;
-          case Display.RIGHT: return tw`self-end`;
+          case Display.LEFT: return tw`self-start sm:self-center`;
+          case Display.RIGHT: return tw`self-end sm:self-center `;
+          case Display.TOP: return tw`self-center`;
       }}
     };
 `;
