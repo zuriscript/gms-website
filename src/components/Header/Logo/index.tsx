@@ -9,13 +9,13 @@ const Logo: React.FC = () => {
     query {
       site {
         siteMetadata {
-          title
+          siteTitle
         }
       }
     }
   `);
 
-  const logoTitle: string = site.siteMetadata.title;
+  const logoTitle: string = site.siteMetadata.siteTitle;
 
   return (
     <Styled.Logo to="/">

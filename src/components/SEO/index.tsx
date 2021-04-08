@@ -25,16 +25,16 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
       query {
         site {
           siteMetadata {
-            title
-            description
-            author
+            siteTitle
+            siteDescription
+            siteAuthor
           }
         }
       }
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || site.siteMetadata.siteDescription;
 
   return (
     <Helmet
@@ -42,7 +42,7 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
         lang
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${site.siteMetadata.siteTitle}`}
       meta={[
         {
           name: `description`,
@@ -66,7 +66,7 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author
+          content: site.siteMetadata.siteAuthor
         },
         {
           name: `twitter:title`,

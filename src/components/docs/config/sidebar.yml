@@ -1,0 +1,30 @@
+# Sidebar navigation
+
+- label: 'Getting Started'
+  link: '/'
+- label: General
+  items:
+    - label: 'Analyze Output'
+      link: '/general/analyze_output'
+    - label: 'Set representations'
+      link: '/general/sets'
+    - label: 'Graph representations'
+      link: '/general/graph_representations'
+    - label: 'Code Profiling'
+      link: '/general/profiling'
+- label: Modules
+  items:
+    - label: 'Bron Kerbosch'
+      link: '/modules/bron_kerbosch'
+    - label: 'k-Clique Counting'
+      link: '/modules/k_clique_danisch'
+- label: Extending GMS
+  items:
+    - label: 'Adding Benchmarks'
+      link: '/extending/add_benchmark'
+    - label: 'Debugging'
+      link: '/extending/debug'
+    - label: 'Extending set operations'
+      link: '/extending/change_set_operations'
+    - label: 'Guidelines'
+      link: '/extending/guidelines'

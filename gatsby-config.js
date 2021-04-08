@@ -1,11 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `GraphMineSuite`,
-    description: `High-performance graph mining.`,
-    author: `@spcl`
+    siteTitle: `GraphMineSuite`,
+    defaultTitle: `GraphMineSuite`,
+    siteTitleShort: `GMS`,
+    siteDescription: `Benchmark Framework and Implementations for High-performance graph mining`,
+    siteAuthor: `@spcl`,
+    siteUrl: `https://zurshmaria.ch`,
+    siteImage: `/images/banner.png`,
+    siteLanguage: `en`,
+    themeColor: `#111827`
   },
   plugins: [
     `gatsby-plugin-typescript`,
+    {
+      resolve: `@rocketseat/gatsby-theme-docs`,
+      options: {
+        basePath:`/docs`,
+        configPath: `src/components/docs/config`,
+        docsPath: `src/docs`,
+        baseDir: `src/docs`
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
