@@ -29,7 +29,7 @@ const Container = styled.header`
     align-items: center;
   }
   @media (min-width: 780px) {
-    
+    display:none;
   }
 `;
 

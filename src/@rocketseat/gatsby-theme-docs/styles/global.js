@@ -7,13 +7,13 @@ export default function GlobalStyle() {
   return (
     <Global
       styles={css`
-        *,
-        *::after,
-        *::before {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
         body {
           font-size: 16px;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -25,7 +25,6 @@ export default function GlobalStyle() {
         }
         h1 {
           font-size: 32px;
-          color: ${theme.colors.title};
           font-weight: bold;
           margin-bottom: 24px;
         }
@@ -43,12 +42,11 @@ export default function GlobalStyle() {
         h4,
         h5,
         h6 {
-          color: ${theme.colors.title};
           margin: 24px 0 16px 0;
           font-weight: bold;
         }
         p {
-          color: ${theme.colors.text};
+          
           font-size: 16px;
           line-height: 28px;
           margin-bottom: 16px;
@@ -72,14 +70,6 @@ export default function GlobalStyle() {
           font-size: calc(100% - 5px);
           padding: 4px;
         }
-        a {
-          color: ${theme.colors.text};
-          font-weight: bold;
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
         blockquote {
           margin-bottom: 16px;
           width: 100%;
@@ -93,12 +83,6 @@ export default function GlobalStyle() {
               color: ${theme.colors.components.blockquote.text};
             }
           }
-        }
-        hr {
-          border: 0;
-          height: 0;
-          border-top: 1px solid rgba(0, 0, 0, 0.1);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
         table {
           border-collapse: separate;
@@ -136,16 +120,13 @@ export default function GlobalStyle() {
         iframe {
           margin-bottom: 16px;
         }
-        img {
-          max-width: 100%;
-        }
         ul,
         ol {
-          color: ${theme.colors.text};
           padding-left: 15px;
           margin-bottom: 16px;
           li {
             line-height: 28px;
+            list-style: disc;
           }
         }
         li ul,
@@ -256,10 +237,6 @@ export default function GlobalStyle() {
         pre[class~='language-diff']::before {
           content: 'diff';
           background: #e6ffed;
-        }
-        pre[class~='language-text']::before {
-          content: 'text';
-          background: #fff;
         }
         pre[class~='language-flow']::before {
           content: 'flow';

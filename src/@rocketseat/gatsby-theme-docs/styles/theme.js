@@ -1,3 +1,4 @@
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   colors: {
     primary: '#34d399',
@@ -10,8 +11,8 @@ export default {
     textSideNavHeader: `#f9fafb`,
     components: {
       blockquote: {
-        background: `#332616`,
-        text: `#E1E1E6`,
+        background: `#feebc8`,
+        text: `#2d3748`,
       },
     },
   },

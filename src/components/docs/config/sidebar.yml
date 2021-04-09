@@ -1,9 +1,11 @@
 # Sidebar navigation
 
-- label: 'Getting Started'
+- label: 'Introduction'
   link: '/'
 - label: General
   items:
+    - label: 'Getting Started'
+      link: '/general/getting_started'
     - label: 'Analyze Output'
       link: '/general/analyze_output'
     - label: 'Set representations'
