@@ -56,3 +56,5 @@ export interface LineParams {
   tone: Tone;
   display: Display;
 }    
+
+export interface AnimationDisplayParams { display: Display; shouldAnimate: boolean}

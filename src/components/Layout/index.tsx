@@ -7,6 +7,7 @@ import Footer from 'components/Footer';
 
 import { GlobalStyles } from 'twin.macro'
 import * as Styled from './styles';
+import { Display } from 'helpers/definitions';
 
 interface Props {
   children: React.ReactNode;
@@ -28,7 +29,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       <GlobalStyles />
       <AnimatePresence exitBeforeEnter>
         <Styled.Layout>
-          <Header siteTitle={data.site.siteMetadata.siteTitle} />
+          <Header siteTitle={data.site.siteMetadata.siteTitle} display={Display.RIGHT} />
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

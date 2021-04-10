@@ -9,7 +9,6 @@ export const Container = styled.aside`
   flex-direction: column;
   position: sticky;
   top: 0;
-  padding-top: 36px;
   transition: transform 0.5s;
   height: calc(100vh - 1px);
   nav {
@@ -37,16 +36,7 @@ export const Container = styled.aside`
   }
 `;
 
-export const LogoContainer = styled.div`
-  width: 100%;
-  a {
-    width: 100%;
-    padding-left: 30px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-`;
+export const LogoContainer = styled.div``;
 
 export const List = styled.ul`
   list-style: none;

@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import { useStaticQuery, graphql } from 'gatsby';
+
+import GHeader from 'components/Header';
 
 const Container = styled.header`
   display: flex;
@@ -49,12 +50,7 @@ export default function Header({ handleMenuOpen }) {
   const { siteTitle } = site.siteMetadata;
 
   return (
-    <Container>
-      <button aria-label="Open sidebar" type="button" onClick={handleMenuOpen}>
-        <GiHamburgerMenu size={23} aria-hidden="true" />
-      </button>
-      <h2>{siteTitle}</h2>
-    </Container>
+   <GHeader />
   );
 }
 

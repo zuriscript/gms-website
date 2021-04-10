@@ -19,7 +19,9 @@ const Logo: React.FC = () => {
 
   return (
     <Styled.Logo to="/">
-        <Icon/>
+        <Styled.SvgContainer>
+          <Icon/>
+        </Styled.SvgContainer>
       <Styled.Text>{logoTitle}</Styled.Text>
     </Styled.Logo>
   );
