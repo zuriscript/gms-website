@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import SEO from 'components/SEO';
 
 import tw, { styled } from "twin.macro"
-import Icon from "assets/svg/logo.inline.svg";
 
 import * as Styled from "components/AnimationLines/styles";
 import {Display, Height, Length, Tone} from "helpers/definitions";
@@ -15,15 +14,15 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-  ${tw`text-3xl text-white md:text-4xl font-nunitosans`};
+  ${tw`text-3xl text-white md:text-4xl font-nunitosans mb-2`};
 `;
 
 export const Text = styled.p`
   ${tw`text-xl text-white font-nunitosans`};
 `;
 
-export const ClickableIcon = styled(Icon)`
-  ${tw`cursor-pointer`};
+export const Button = styled.button`
+  ${tw`bg-transparent hover:bg-green-400 text-green-600 font-semibold hover:text-white py-2 px-4 border border-green-400 hover:border-transparent rounded mr-2`};
 `;
 
 
@@ -49,7 +48,7 @@ const NotFoundPage: React.FC = () => (
     <Styled.Space height={Height.SMALL} />
         <Title>404: Page not found</Title>
         <Text>This Path does not exists</Text>
-        <Link to="/"><ClickableIcon/></Link>
+        <Link to="/"><Button>Go Home</Button></Link>
         <Styled.Space height={Height.SMALL} />
         <Styled.Line
           tone = {Tone.YELLOW_BRIGHT}

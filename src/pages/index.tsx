@@ -9,7 +9,7 @@ import Papers from 'components/Papers';
 const IndexPage: React.FC = () => {
   return (
     <Layout>
-      <SEO title="GraphMineSuite" />
+      <SEO title="Home" />
       <HeroBanner />
       <Features />
       <Papers />
