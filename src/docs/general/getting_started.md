@@ -106,47 +106,6 @@ In addition some benchmarks allow for additional benchmark-specific parameters, 
 
 would run with a clique-size of 5 and a uniform generated graph of size 2<sup>10</sup>.
 
-### Running benchmarks used in the paper
-
-For reproducibility purposes, we prepared some ready-to-go executables.
-
-#### Maximal clique enumeration on various graphs
-
-To obtain the same data as was used in **Figure 3**, run
-
-```bash
-./bin/maximal_clique_enum_bron_kerbosch -f <graph-file>
-```
-
-You may obtain the graphs from the respective network repositories like [SNAP](https://snap.stanford.edu/snap/), [KONECT](http://konect.cc/), etc.
-We do not include `Das et al.` algorithm in our code.
-
-#### Maximal clique enumeration on synthetic graphs
-
-To obtain the same data as was used in **Figure 7, a**, run
-
-```bash
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 10 --deg 1
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 10 --deg 4
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 10 --deg 16
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 10 --deg 64
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 10 --deg 256
-
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 11 --deg 1
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 11 --deg 4
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 11 --deg 16
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 11 --deg 64
-./bin/maximal_clique_enum_bron_kerbosch -g kronecker 11 --deg 256
-```
-
-#### Maximal clique enumeration with metrics
-
-To obtain the same data as was used in **Figure 7, b**, run
-
-```bash
-./bin/maximal_clique_enum_bron_kerbosch_papiw -f <graph-file>
-```
-
 ### Generators and file formats
 
 GMS uses graph I/O functionality from the GAPBS project.
