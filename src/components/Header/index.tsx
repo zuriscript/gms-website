@@ -9,10 +9,11 @@ import { Display } from 'helpers/definitions';
 interface Props{
   siteTitle: string;
   display: Display;
+  onToggle?: Function;
 }
 
 
-const Header: React.FC<Props> = ({ siteTitle, display }) =>
+const Header: React.FC<Props> = ({ siteTitle, display, onToggle }) =>
 {
   const shouldAnimate :boolean = samePlace();
 
@@ -24,7 +25,7 @@ const Header: React.FC<Props> = ({ siteTitle, display }) =>
         animate={shouldAnimate ? { maxWidth: display == Display.LEFT ? [768,window.innerWidth] : [window.innerWidth, 768] } : false}
         transition={{ ease: display == Display.LEFT ? "anticipate" : "backOut", duration: 1.25 }} >
         <Logo />
-        <MainNav />
+        <MainNav onToggle={onToggle}/>
       </Styled.Wrapper>
     </Styled.Header>
   );

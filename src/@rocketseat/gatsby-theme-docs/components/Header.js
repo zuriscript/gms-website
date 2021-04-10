@@ -50,7 +50,7 @@ export default function Header({ handleMenuOpen }) {
   const { siteTitle } = site.siteMetadata;
 
   return (
-   <GHeader />
+   <GHeader onToggle={handleMenuOpen} />
   );
 }
 

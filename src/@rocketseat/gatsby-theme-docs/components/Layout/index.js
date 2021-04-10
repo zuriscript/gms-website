@@ -28,7 +28,7 @@ export default function Layout({
   return (
     <Fragment>
       <Overlay isMenuOpen={isMenuOpen} onClick={handleMenuOpen} />
-      <GHeader siteTitle="hallo" />
+      <GHeader siteTitle="hallo" onToggle={handleMenuOpen} />
       <Container>
         <Sidebar isMenuOpen={isMenuOpen} />
         <Main>

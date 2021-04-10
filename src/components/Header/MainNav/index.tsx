@@ -22,7 +22,11 @@ const mainNavItems: MainNavItem[] = [
   },
 ];
 
-const MainNav: React.FC = () => {
+interface NavParams
+{
+  onToggle?: Function
+}
+const MainNav: React.FC<NavParams> = ({onToggle}) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -39,7 +43,7 @@ const MainNav: React.FC = () => {
           </Styled.MainNavItem>
         ))}
       </Styled.MainNav>
-      <Styled.ToogleMainNav open={open} onClick={() => setOpen(!open)}>
+      <Styled.ToogleMainNav open={open} onClick={() => onToggle? onToggle() : setOpen(!open)}>
         <span />
         <span />
         <span />
@@ -49,3 +53,5 @@ const MainNav: React.FC = () => {
 };
 
 export default MainNav;
+
+
