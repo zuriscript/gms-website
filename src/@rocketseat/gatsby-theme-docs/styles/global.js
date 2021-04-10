@@ -57,8 +57,8 @@ export default function GlobalStyle() {
           vertical-align: middle;
           line-height: 1;
           padding: 0.2em;
-          background-color: #44475a;
-          color: rgba(248, 248, 242);
+          --tw-bg-opacity: 1;
+          background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
           font-size: 14px;
           border-radius: 3px;
           font-feature-settings: 'clig' 0, 'calt' 0;
@@ -206,12 +206,15 @@ export default function GlobalStyle() {
         }
         pre[class~='language-shell']::before {
           content: 'shell';
+          background: #ffa8df;
         }
         pre[class~='language-sh']::before {
           content: 'sh';
+          background: #ffa8df;
         }
         pre[class~='language-bash']::before {
           content: 'bash';
+          background: #ffa8df;
         }
         pre[class~='language-yaml']::before,
         pre[class~='language-yml']::before {
@@ -228,7 +231,10 @@ export default function GlobalStyle() {
         }
         pre[class~='language-cpp']::before {
             content: 'c++';
-            background: #005a9c;
+            --tw-bg-opacity: 1;
+            background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+            --tw-text-opacity: 1;
+            color: rgba(249, 250, 251, var(--tw-text-opacity));
         }
         pre[class~='language-cmake']::before {
             content: 'cmake';
