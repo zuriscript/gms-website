@@ -7,7 +7,7 @@ In this guide we discuss how to use the implementations of Danisch et al.'s k-cl
 
 The algorithm builds for each node in the current graph a subgraph induced by its neighbours. Then it recurses on the subgraphs and, at the last level, counts the k-cliques.
 
-The k-clique benchmarks are built with the pipeline benching-variant. For more information see [Pipeline Interface](../extend/add_benchmark.md)
+The k-clique benchmarks are built with the pipeline benching-variant. For more information see [Pipeline Interface](/docs/extending/add_benchmark)
 
 ## Building
 

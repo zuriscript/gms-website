@@ -117,7 +117,7 @@ using RobinHoodGraph = SetGraph<RobinHoodSet>;
 
 ### Creating a SetGraph instance
 
-To create a SetGraph instance you first need a `CSRGraph` or a compatible graph, see [Graph representations](graph_representations.md) for more information.
+To create a SetGraph instance you first need a `CSRGraph` or a compatible graph, see [Graph representations](/docs/general/graph_representations) for more information.
 Then you can simply call the factory function `FromCGraph` like this:
 
 ```cpp

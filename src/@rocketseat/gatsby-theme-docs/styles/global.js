@@ -51,6 +51,15 @@ export default function GlobalStyle() {
           line-height: 28px;
           margin-bottom: 16px;
           font-weight: 400;
+          a {
+            --tw-text-opacity: 1;
+            color: rgba(59, 130, 246, var(--tw-text-opacity));
+            text-decoration: none;
+          }
+          a:hover {
+            --tw-text-opacity: 1;
+            color: rgba(67, 56, 202, var(--tw-text-opacity));$
+          }
         }
         code.inline-code {
           display: inline-block;
@@ -80,7 +89,12 @@ export default function GlobalStyle() {
             color: ${theme.colors.components.blockquote.text};
             margin: 0;
             a {
-              color: ${theme.colors.components.blockquote.text};
+              --tw-text-opacity: 1;
+              color: rgba(59, 130, 246, var(--tw-text-opacity));
+            }
+            a:hover {
+              --tw-text-opacity: 1;
+              color: rgba(67, 56, 202, var(--tw-text-opacity));
             }
           }
         }

@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro"
 
 export const Banner = styled.section`
-  ${tw`bg-background flex flex-col justify-center items-center`};
+  ${tw`bg-background flex flex-col justify-center items-center pt-7`};
 `;
 
 export const Title = styled.h1`

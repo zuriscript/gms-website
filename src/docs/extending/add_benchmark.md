@@ -99,7 +99,7 @@ private:
 
 ### Printing output
 
-You can use the `Pipeline::LocalPrinter` method to add information to the output line, which provides output in the format described in [Analyzing Output](../general/analyze_output.md).
+You can use the `Pipeline::LocalPrinter` method to add information to the output line, which provides output in the format described in [Analyzing Output](/docs/general/analyze_output.md).
 
 For example, from any method inside of your pipeline class you could call:
 

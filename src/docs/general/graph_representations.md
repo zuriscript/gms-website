@@ -6,7 +6,7 @@ description: Learn about our graph representations
 ## Overview
 
 The default graph representation is `CSRGraph`.
-As mentioned in [Set representations and operations](sets.md), we refer to a first category of graphs as `SGraph` in generic code.
+As mentioned in [Set representations and operations](/docs/general/sets), we refer to a first category of graphs as `SGraph` in generic code.
 `CSRGraph` has a different interface, since it doesn't pre-construct set instances and also provides separate access for in- and out-neighborhoods, making it more suitable for directed graph algorithms than `SetGraph`.
 We also provide a number of alternative graph representations for CSRGraph where each offers a different compression scheme:
 
