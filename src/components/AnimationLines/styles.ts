@@ -12,7 +12,7 @@ ${tw`
   pt-5`};
 `;
 
-export const Title = styled.h1`
+export const Title = styled.p`
   ${tw`text-center
   mx-2 
   text-xl sm:text-2xl

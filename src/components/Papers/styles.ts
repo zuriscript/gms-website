@@ -7,7 +7,7 @@ export const PaperSection = styled.div`
   pb-5 md:pb-10  `};
 `;
 
-export const Title = styled.h1`
+export const Title = styled.p`
   ${tw`
   text-center 
   text-3xl
@@ -28,7 +28,7 @@ export const Paper = styled.div`
   pb-5`};
 `;
 
-export const PaperTitle = styled.h1`
+export const PaperTitle = styled.p`
   ${tw`
   text-base
   text-left

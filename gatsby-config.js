@@ -6,7 +6,7 @@ module.exports = {
     siteDescription: `Benchmark Framework and Implementations for High-performance graph mining`,
     siteAuthor: `@spcl`,
     siteUrl: `https://zurshmaria.ch`,
-    siteImage: `/images/banner.png`,
+    siteImage: `/banner.png`,
     siteLanguage: `en`,
     themeColor: `#111827`
   },

@@ -43,7 +43,7 @@ props.displayProp === Display.TOP  ?
     css`${tw`max-w-md text-center md:text-left`};`;
 export const FeatureContent = styled.div<DisplayProp>`${contentDisplayPos};`;
 
-export const FeatureTitle = styled.h1`
+export const FeatureTitle = styled.p`
   ${tw`
   text-xl md:text-2xl
   font-bold font-nunitosans`};

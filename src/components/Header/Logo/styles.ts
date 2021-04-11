@@ -7,7 +7,7 @@ export const Logo = styled(motion(Link))`
   ${tw`flex items-center mr-auto text-gray-50 hover:text-gray-300`};
 `;
 
-export const Text = styled.h1`
+export const Text = styled.p`
   ${tw`text-lg font-nunitosans font-bold mb-0`};
 `;
 
