@@ -40,11 +40,11 @@ PAPIW::START();
 doSomethingInteressting();
 PAPIW::STOP();
 
-    doSomethingUnimportant(); // Do not measure
+doSomethingUnimportant(); // Do not measure
 
-    PAPIW::START();
-    doSomethingInteresstingAgain();
-    PAPIW::STOP();
+PAPIW::START();
+doSomethingInteresstingAgain();
+PAPIW::STOP();
 
 ```
 
