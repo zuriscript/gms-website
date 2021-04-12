@@ -78,6 +78,7 @@ module.exports = {
         }
       }
     },
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`

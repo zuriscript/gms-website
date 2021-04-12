@@ -24,7 +24,7 @@ const Footer: React.FC = () => (
               <Styled.Dot/>
               <Styled.Link href="/robots.txt">ROBOTS</Styled.Link>
               <Styled.Dot/>
-              <Styled.Link href="https://www.google.ch">LICENSE</Styled.Link>
+              <Styled.Link href="/LICENSE.txt">LICENSE</Styled.Link>
               <Styled.Dot/>
               <Styled.Link href="https://spcl.inf.ethz.ch/">SPCL</Styled.Link>
         </Styled.FooterLinkContainer>
