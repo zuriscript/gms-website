@@ -67,7 +67,7 @@ Here and in the rest of the documentation we refer to the path of the Git reposi
   `$ mkdir $REPO/build && cd $REPO/build`
 - Generate the Makefile:  
   `$ cmake -DCMAKE_BUILD_TYPE=Release ..`
-  - for the debugging build, which is recommended during development since it enables compiler sanitizers and bounds checking (in some places), change `Release` to `Debug`
+- for the debugging build, which is recommended during development since it enables compiler sanitizers and bounds checking (in some places), change `Release` to `Debug`
 - Build the code:
   `$ make -j4` (where 4 is the number of threads to build the code)
 - You will now find the benchmark binaries in a subdirectory `bin` of the current build directory. Unittests are compiled to `tests`.

@@ -12,7 +12,7 @@ export const Footer = styled.footer`
 `;
 
 export const TextContainer = styled.div`
-  ${tw`lg:pr-40 lg:max-w-2xl`};
+  ${tw`lg:pr-28 lg:max-w-2xl 3xl:pr-20 3xl:max-w-4xl`};
 `;
 
 export const CenteredTextContainer = styled.div`
