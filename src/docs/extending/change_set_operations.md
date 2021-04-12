@@ -157,17 +157,10 @@ which will define a target `mybench`.
 
 ## Run the benchmarks
 
-TODO: Name of $BINARY
-
 Now we can run the benchmarks.
-To see the full usage information run
-
-`$BINARY --help`
 
 To run it five times each for a graph of size `2^10` with uniformly distributed degree, invoke
 
-`$BINARY -g uniform 10 -n 5`
-
-`$BINARY -f mygraph.el -n 5`
-
-TODO: Output
+```bash
+./bin/mybench -g uniform 10 -n 5
+```

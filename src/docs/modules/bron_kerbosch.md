@@ -8,7 +8,7 @@ In this guide we discuss how to use the implementations of the Bron-Kerbosch alg
 ## Building
 
 We strongly differentiate between release and debug builds.  
-While the maximal cliques are only counted in the release build, we store the result sets in the debug build.  
+While the maximal cliques are only counted in the release build, we store the result sets in the debug build.
 Therefore verification in the release build only verifies the number of the mined maximal cliques while the debug build makes a more thorough verification. But note that the runtime of a regular run drastically increases for the debug build.
 In order to build for a debug environment you need to configure CMake with `-DCMAKE_BUILD_TYPE=Debug`.
 
