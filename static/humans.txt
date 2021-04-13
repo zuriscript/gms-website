@@ -28,8 +28,6 @@
 
 /* THANKS */
   Undraw
-  framer-motion
-  Gatsby
 
 /* SITE */
   Last update: 2021-04-12

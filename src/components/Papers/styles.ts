@@ -52,5 +52,24 @@ export const PaperPostScriptum = styled.p`
 `;
 
 export const PaperLink = styled.a`
-  ${tw`text-indigo-500 pl-2 hover:text-indigo-800`};
+  ${tw`relative text-indigo-700 border-b border-transparent hover:text-indigo-900 ml-2`};
+  
+  width: max-content;
+  
+  &.active {
+    ${tw`border-indigo-600`};
+  }
+
+  &:before {
+    ${tw`absolute w-full bg-indigo-600 h-px left-0 invisible`};
+    content: '';
+    bottom: -1px;
+    transform: scaleX(0);
+    transition: 0.2s;
+  }
+
+  &:hover:before {
+    ${tw`visible`};
+    transform: scaleX(1);
+  }
 `;
