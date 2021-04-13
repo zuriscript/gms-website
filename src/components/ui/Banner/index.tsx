@@ -53,9 +53,3 @@ const images = withArtDirection(getImage(data.largeImage) as IGatsbyImageData, [
 
 export default Banner;
 
-{/* <Styled.ImageContainer>
-        <StaticImage
-        src="../../../assets/images/gmsDesign.png"
-        alt="GMS"
-        placeholder="blurred"/>
-   </Styled.ImageContainer>  */}
