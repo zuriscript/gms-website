@@ -6,7 +6,7 @@ display: 'TOP'
 order: '5'
 ---
 
-```
+```text
 - Degeneracy reordering (by up to >2x)
 - Maximal clique listing (by up to >9x)
 - k-clique listing (by 1.1x)

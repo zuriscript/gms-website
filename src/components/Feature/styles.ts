@@ -59,7 +59,10 @@ export const FeatureText = styled.p`
 export const MarkdownContent = styled.div`
   /* Inline code */
   .language-text {
-    ${tw`bg-yellow-100 text-red-700 font-mono 
+    background: #feebc8;
+    color: #2d3748;
+    border-radius: 5px;
+    ${tw`font-mono 
     overflow-auto 
     w-screen sm:w-auto
     `};
