@@ -18,7 +18,7 @@ const mainNavItems: MainNavItem[] = [
   },
   {
     title: 'Code',
-    slug: '/code/'
+    slug: 'https://github.com/zurvar/gms-website'
   },
 ];
 
@@ -33,14 +33,21 @@ const MainNav: React.FC<NavParams> = ({onToggle}) => {
     <>
       <Styled.MainNav open={open}>
         {mainNavItems.map((item, index) => (
-          <Styled.MainNavItem
-            key={`nav-item-${index}`}
-            to={item.slug}
-            activeClassName="active"
-            whileTap={{ scale: 0.9 }}
-          >
-            {item.title}
-          </Styled.MainNavItem>
+          item.slug.includes('http') || item.slug.includes('www') ?
+            <Styled.MainNavItemExternal
+              key={`nav-item-${index}`}
+              href={item.slug}
+              whileTap={{ scale: 0.9 }}>
+              {item.title}
+            </Styled.MainNavItemExternal>
+            :
+            <Styled.MainNavItem
+              key={`nav-item-${index}`}
+              to={item.slug}
+              activeClassName="active"
+              whileTap={{ scale: 0.9 }}>
+              {item.title}
+            </Styled.MainNavItem>
         ))}
       </Styled.MainNav>
       <Styled.ToogleMainNav open={open} onClick={() => onToggle? onToggle() : setOpen(!open)}>
