@@ -50,7 +50,7 @@ const MainNav: React.FC<NavParams> = ({onToggle}) => {
             </Styled.MainNavItem>
         ))}
       </Styled.MainNav>
-      <Styled.ToogleMainNav open={open} onClick={() => onToggle? onToggle() : setOpen(!open)}>
+      <Styled.ToogleMainNav aria-label="Navigation" open={open} onClick={() => onToggle? onToggle() : setOpen(!open)}>
         <span />
         <span />
         <span />
