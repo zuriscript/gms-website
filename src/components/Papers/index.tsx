@@ -60,7 +60,7 @@ const Papers: React.FC = () => {
                   <Styled.PaperAuthors>{authors}</Styled.PaperAuthors>
                   <Styled.PaperPostScriptum>
                     {postscriptum}
-                    <Styled.PaperLink href={link}>arXiv</Styled.PaperLink>
+                    <Styled.PaperLink href={link} rel="noopener">arXiv</Styled.PaperLink>
                   </Styled.PaperPostScriptum>
               </Styled.Paper>
             );

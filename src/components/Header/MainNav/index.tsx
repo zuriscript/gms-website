@@ -37,6 +37,7 @@ const MainNav: React.FC<NavParams> = ({onToggle}) => {
             <Styled.MainNavItemExternal
               key={`nav-item-${index}`}
               href={item.slug}
+              rel="noopener"
               whileTap={{ scale: 0.9 }}>
               {item.title}
             </Styled.MainNavItemExternal>
