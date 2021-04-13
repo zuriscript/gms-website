@@ -81,6 +81,7 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-preact`,
     `gatsby-plugin-offline`
   ],
 };
