@@ -53,8 +53,7 @@ export default function GlobalStyle() {
           font-weight: 400;
           a {
             --tw-text-opacity: 1;
-            color: rgba(59, 130, 246, var(--tw-text-opacity));
-            text-decoration: none;
+            color: rgba(37, 99, 235, var(--tw-text-opacity));
           }
           a:hover {
             --tw-text-opacity: 1;

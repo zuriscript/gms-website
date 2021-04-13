@@ -1,7 +1,7 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   colors: {
-    primary: '#34d399',
+    primary: '#10b981',
     background: '#FFFFFF',
     backgroundSideNav: '#111827',
     shape: `#F2F2FA`,
