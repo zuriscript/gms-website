@@ -51,6 +51,7 @@ export default function GlobalStyle() {
           line-height: 28px;
           margin-bottom: 16px;
           font-weight: 400;
+          word-break: break-word;
           a {
             --tw-text-opacity: 1;
             color: rgba(37, 99, 235, var(--tw-text-opacity));
