@@ -5,7 +5,7 @@ module.exports = {
     siteTitleShort: `GMS`,
     siteDescription: `Benchmark Framework and Implementations for High-performance graph mining`,
     siteAuthor: `@spcl`,
-    siteUrl: `https://zurshmaria.ch`,
+    siteUrl: `https://graphminesuite.netlify.app/`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
     themeColor: `#111827`
