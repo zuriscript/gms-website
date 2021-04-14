@@ -23,7 +23,7 @@ export const ImageContainer = styled.div`
 ${tw`
   md:w-full xl:w-7/12 
   md:px-10 xl:px-0
-  h-screen md:h-auto pb-20 -my-10 md:my-0`
+  h-screen md:h-auto pb-20 -my-10 md:my-0 overflow-y-hidden`
   
 };
 
