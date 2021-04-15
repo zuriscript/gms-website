@@ -39,8 +39,8 @@ export const Feature = styled.div<DisplayProp>`${featureDisplayPos};`;
 
 const contentDisplayPos = (props: DisplayProp) =>
 props.displayProp === Display.TOP  ?
-    css`${tw`text-center px-3 md:px-0`};` :
-    css`${tw`max-w-md text-center md:text-left`};`;
+    css`${tw`text-left md:text-center px-3 md:px-0`};` :
+    css`${tw`max-w-md text-left`};`;
 export const FeatureContent = styled.div<DisplayProp>`${contentDisplayPos};`;
 
 export const FeatureTitle = styled.p`
