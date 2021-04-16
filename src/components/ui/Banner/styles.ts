@@ -27,10 +27,20 @@ ${tw`
   
 };
 
-@media screen and (max-width: 750px) {
+@media only screen 
+and (max-width: 750px) {
+
   .art-directed {
     margin-top: 50px;
     min-height: 100vh;
+  }
+}
+
+@media only screen 
+and (max-width: 750px)
+and (orientation:landscape)  {
+  img {
+    object-fit:scale-down !important;
   }
 }
 
