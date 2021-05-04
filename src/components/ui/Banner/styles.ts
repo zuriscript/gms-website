@@ -4,6 +4,10 @@ export const Banner = styled.section`
   ${tw`bg-background flex flex-col justify-center items-center pt-5 md:pt-10`};
 `;
 
+export const TitleWrapper = styled.div`
+  ${tw`p-2`};
+`;
+
 export const Title = styled.h1`
   ${tw`bg-background text-center 
         text-gray-50

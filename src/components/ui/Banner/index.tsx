@@ -16,7 +16,7 @@ const Banner: React.FC<Props> = ({ title, subtitle }) => {
 
   const data = useStaticQuery(graphql`
   query {
-    largeImage: file(relativePath: { eq: "gmsDesignNew.png" }) {
+    largeImage: file(relativePath: { eq: "gmsDesignNew2.png" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
@@ -43,8 +43,10 @@ const images = withArtDirection(getImage(data.largeImage) as IGatsbyImageData, [
 ])
 
   return(<Styled.Banner>
-     <Styled.Title>{title}</Styled.Title>
-     <Styled.SubTitle>{subtitle}</Styled.SubTitle>
+      <Styled.TitleWrapper>
+        <Styled.Title>{title}</Styled.Title>
+        <Styled.SubTitle>{subtitle}</Styled.SubTitle>
+     </Styled.TitleWrapper>
      <Styled.ImageContainer>
         <GatsbyImage className="art-directed" image={images} alt="GMS" />
      </Styled.ImageContainer>

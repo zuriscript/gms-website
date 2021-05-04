@@ -19,7 +19,7 @@ const featureDisplayPos = (props: DisplayProp) =>
       flex flex-col md:flex-row 
       md:justify-center md:items-center
       md:space-x-10
-      mx-3
+      mx-5
       pt-9 md:pt-14`};` :
 (
   (props.displayProp === Display.RIGHT ) ?
@@ -27,12 +27,13 @@ const featureDisplayPos = (props: DisplayProp) =>
       flex flex-col md:flex-row-reverse 
       md:justify-center md:items-center
       md:space-x-10 md:space-x-reverse
-      mx-3
+      mx-5
       pt-9 md:pt-14`};` :
     css`${tw`
       flex flex-col
       items-center
       space-y-5
+      mx-3
       pt-10 md:pt-24`};`
 ); 
 export const Feature = styled.div<DisplayProp>`${featureDisplayPos};`;

@@ -23,7 +23,7 @@ export const Papers = styled.div`
 
 export const Paper = styled.div`
   ${tw`
-  px-3 lg:px-0
+  px-5 lg:px-0
   md:w-full lg:w-7/12
   pb-5`};
 `;

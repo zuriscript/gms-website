@@ -18,7 +18,7 @@ const mainNavItems: MainNavItem[] = [
   },
   {
     title: 'Code',
-    slug: 'https://github.com/zurvar/gms-website'
+    slug: 'https://spcl.inf.ethz.ch/Research/Parallel_Programming/GMS/'
   },
 ];
 
