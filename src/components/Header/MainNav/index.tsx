@@ -14,7 +14,7 @@ const mainNavItems: MainNavItem[] = [
   },
   {
     title: 'SISA',
-    slug: '/sisa'
+    slug: 'https://arxiv.org/pdf/2104.07582.pdf'
   },
   {
     title: 'Docs',
