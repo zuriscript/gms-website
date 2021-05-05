@@ -13,6 +13,10 @@ const mainNavItems: MainNavItem[] = [
     slug: '/'
   },
   {
+    title: 'SISA',
+    slug: '/sisa'
+  },
+  {
     title: 'Docs',
     slug: '/docs/'
   },

@@ -16,7 +16,7 @@ const Banner: React.FC<Props> = ({ title, subtitle }) => {
 
   const data = useStaticQuery(graphql`
   query {
-    largeImage: file(relativePath: { eq: "gmsDesign.png" }) {
+    largeImage: file(relativePath: { eq: "gmsDesignDesktop.png" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
