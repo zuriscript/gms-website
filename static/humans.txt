@@ -22,6 +22,7 @@
 /* THANKS */
   Undraw
   Rocketseat
+  Netlify
 
 /* SITE */
   Last update: 2021-05-04
