@@ -37,22 +37,6 @@ export const Button = styled.button`
 const SisaPage: React.FC = () => (
   <Content> 
     <SEO title="SISA" />
-    <Styled.Line
-          tone = {Tone.GREEN_MEDIUM}
-          length = {Length.LONG}
-          height = {Height.SMALL}
-          display = {Display.LEFT}
-          animate={{ x: [-100, 0, 0, -100,-100] }}
-          transition={{ ease: "linear", duration: 10, repeat: Infinity }} />
-        <Styled.Line
-          tone = {Tone.RED_DARK}
-          length = {Length.MEDIUM}
-          height = {Height.SMALL}
-          display = {Display.LEFT}
-          animate={{ x: [-100, 0, 0, 0, -100, -100, -100] }}
-          transition={{ ease: "linear", duration: 5, repeat: Infinity }} />
-    
-    <Styled.Space height={Height.SMALL} />
         <Title>SISA</Title>
         <SubTitle>Set-Centric Instruction Set Architecture for Graph Mining on Processing-in-Memory Systems</SubTitle>
         <Text>This page is under construction 🔨</Text>
@@ -61,20 +45,6 @@ const SisaPage: React.FC = () => (
           <a href="https://arxiv.org/pdf/2104.07582.pdf" rel="noopener"><Button>Go to Paper</Button></a>
           <Link to="/"><Button>Go Home</Button></Link>
         </ButtonGroup>
-        <Styled.Line
-          tone = {Tone.YELLOW_BRIGHT}
-          length = {Length.SHORT}
-          height = {Height.VERY_SMALL}
-          display = {Display.RIGHT}
-          animate={{ x: [100, 0, 100] }}
-          transition={{ ease: "linear", duration: 6, repeat: Infinity }} />
-      <Styled.Line
-          tone = {Tone.BLUE_MEDIUM}
-          length = {Length.VERY_LONG}
-          height = {Height.SMALL}
-          display = {Display.RIGHT}
-          animate={{ x: [50, 100,50] }}
-          transition={{ ease: "linear", duration: 4, repeat: Infinity }} />
   </Content>
 );
 
