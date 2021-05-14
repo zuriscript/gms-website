@@ -11,7 +11,7 @@ description: Learn How to setup GMS
 Installation:
 
 ```bash
-git clone https://github.com/spcl/gms && cd gms
+cd gms
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j4

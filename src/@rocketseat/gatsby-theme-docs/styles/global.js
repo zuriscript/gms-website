@@ -262,6 +262,10 @@ export default function GlobalStyle() {
           content: 'flow';
           background: #e8bd36;
         }
+        .prism-code
+        {
+          box-shadow: rgb(20 20 20 / 13%) 1px 1px 20px !important;
+        }
       `}
     />
   );
