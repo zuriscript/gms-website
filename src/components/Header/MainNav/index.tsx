@@ -22,7 +22,7 @@ const mainNavItems: MainNavItem[] = [
   },
   {
     title: 'Code',
-    slug: 'https://spcl.inf.ethz.ch/Research/Parallel_Programming/GMS/'
+    slug: 'https://github.com/spcl/gms'
   },
 ];
 
