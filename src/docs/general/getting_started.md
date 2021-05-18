@@ -55,7 +55,6 @@ The repository is structured as follows:
       - `permuters`: Graph neighborhood permuters that can be applied to neighborhoods prior to computation
     - `sets`: Set representations and operations
   - `third_party`: Several third-party libraries, see top-level README for more information
-- `docs`: Documentation
 - `examples`: Examples accompanying the documentation
 - `testing`: Unit tests
 - `scripts`: Some simple postprocessing scripts, written in Bash and Python
