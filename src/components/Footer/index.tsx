@@ -12,8 +12,8 @@ const Footer: React.FC = () => (
   <Styled.Footer>
     <FooterIcon css={tw`hidden lg:block min-h-screen md:h-auto lg:-ml-40`}/>
     <Styled.TextContainer> 
-      <Styled.Title css={tw`px-4 md:px-10 lg:px-4`}>We are researchers and students from SPCL and ETH Zurich</Styled.Title>
-      <Styled.Text css={tw`pt-5 px-4 md:px-10 lg:px-4`}>GraphMineSuite is actively developed. As subject of research it will likely include more features in the future. If you are interested in our work contact us via SPCL.</Styled.Text>
+      <Styled.Title css={tw`px-4 md:px-10 lg:px-4`}>We are researchers and students from SPCL @ ETH Zurich</Styled.Title>
+      <Styled.Text css={tw`pt-5 px-4 md:px-10 lg:px-4`}>GraphMineSuite and the associated projects are actively developed. As subject of research it will likely include more features in the future. If you are interested in our work contact us via SPCL.</Styled.Text>
       <Styled.CenteredTextContainer>
         <Styled.LogoLinkSection css={tw`flex items-end pt-7 px-2 md:px-0`}>
               <ETHIcon/>
